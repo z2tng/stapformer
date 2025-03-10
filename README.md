@@ -2,7 +2,7 @@
 
 This is the official implementation for "[STAPFormer: STAPFormer: A New 3D Human Pose Estimation Framework in Sports and Health (ACM BCB 2024)](https://dl.acm.org/doi/10.1145/3698587.3701367)" on PyTorch platform.
 
-<p align="center"><img src="network.png", width="700" alt="" /></p>
+<p align="center"><img src="./network.png", width="700" alt="" /></p>
 
 ## Dependencies
 
@@ -45,8 +45,8 @@ python train_3dhp.py --config configs/mpi/stapformer_base.yaml --checkpoint chec
 
 | Method       | # frames  | # Params | # MACs         | H36M (SH) weights | H36M (GT) weights | MPI-INF-3DHP weights |
 |--------------|-----------|----------|----------------|-------------------|-------------------|----------------------|
-| STAPFormer-S |    243    |   4.0M   |      6.9G      |   [download]()    |   [download]()    |     [download]()     |
-| STAPFormer   |    243    |  10.9M   |     18.0G      |   [download]()    |   [download]()    |     [download]()     |
+| STAPFormer-S |    243    |   4.0M   |      6.9G      |   [download](https://drive.google.com/file/d/1_GPwzNKFJGnnR34G7aPID4A4phJUqeub/view?usp=sharing)    |   [download](https://drive.google.com/file/d/1KDqxatUrW3yeRIclBrafLeims9T-pLNa/view?usp=sharing)    |     [download](https://drive.google.com/file/d/1CIg9sXjb6AzokCHoD7Fp4znjQgNWEOgg/view?usp=sharing)     |
+| STAPFormer   |    243    |  10.9M   |     18.0G      |   [download](https://drive.google.com/file/d/1hiWfbTNHpJDpxf5d9G_yx13MF8gt8-Xi/view?usp=sharing)    |   [download](https://drive.google.com/file/d/1YiNsQ_AkjsKqVYXA3tn3NllHSVwO2FTx/view?usp=sharing)    |     [download](https://drive.google.com/file/d/1cVJkGIcr9ciMxlom2obcSAM9fv5iOBWF/view?usp=sharing)     |
 
 To evaluate our model on Human3.6M, please run:
 
