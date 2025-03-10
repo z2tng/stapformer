@@ -1,0 +1,49 @@
+# Training
+learning_rate: 0.0005
+batch_size: 16
+weight_decay: 0.01
+lr_decay: 0.99
+epochs: 100
+
+# Model
+model_name: stapformer
+depth: 16
+dim_in: 3
+dim_feat: 128
+dim_compress: 128
+dim_rep: 512
+dim_out: 3
+block_size: [ 3, 3 ]
+block_stride: [ 3, 3 ]
+mlp_ratio: 4
+mlp_out_ratio: 1
+num_heads: 8
+qkv_bias: False
+qkv_scale: null
+attn_head_dim: null
+drop_rate: 0.0
+attn_drop_rate: 0.0
+drop_path_rate: 0.0
+init_std: 0.02
+num_frames: 243
+num_joints: 17
+
+# Data
+data_root: data/motion3d/
+data_root_2d: data/motion2d/
+subset_list: [ H36M-243 ]
+dt_file: h36m_sh_conf_cam_source_final.pkl
+root_rel: True # Normalizing joints relative to the root joint
+add_velocity: False
+
+# Loss
+lambda_3d_velocity: 20.0
+lambda_scale: 0.5
+lambda_lv: 0.0
+lambda_lg: 0.0
+lambda_a: 0.0
+lambda_av: 0.0
+
+# Augmentation
+use_proj_as_2d: False
+flip: True
